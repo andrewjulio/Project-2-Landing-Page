@@ -1,24 +1,18 @@
 
-let navItems = [];
-
-
-navItems = ['About', 'Features', 'Pricing', 'Testimonials', 'Download Now'];
-
-
 function createNav() {
 
-    const navList = document.createElement('ul')
+    const navItems = ['About', 'Features', 'Pricing', 'Testimonials', 'Download Now'];
 
-    navList.className="navbar";
+    const ul = document.createElement('ul')
 
-    const header = document.querySelector('header');
+    ul.className="navbar";
+
+    const header = document.getElementById('header');
 
     for (let navItem of navItems) {
-        let li = navItems(navItem);
-        let listItem = document.createElement("li");
-        let listValue = document.createTextNode(li);
-        listItem.appendChild(listValue);
-        myList.appendChild(listItem);
+        let li = document.createElement("li");
+        ul.appendChild(li);
+        li.innerHTML += navItem;
     }
 
     header.appendChild(ul);
