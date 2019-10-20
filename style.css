@@ -1,0 +1,34 @@
+/* Styling for the Landing Page on Large Devices*/
+.box {
+    border: 1px solid lightseagreen;
+    background: lightsteelblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 80px 1500px 80px;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+#header {
+    grid-area: header;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px repeat(5, 300px) 80px;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+#footer {
+    grid-area: footer;
+}
