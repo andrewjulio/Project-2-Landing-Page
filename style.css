@@ -1,36 +1,46 @@
 /* Styling for the Landing Page on Large Devices*/
 .box {
     border: 1px solid lightseagreen;
-    background: lightsteelblue;
+    /*background: lightsteelblue;*/
 }
 
 .container {
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 40px 3000px 40px;
+    grid-template-rows: 40px 2250px 40px;
     grid-template-areas:
     "header"
     "content"
     "footer";
     justify-content: center;
     align-content: center;
+    background-image: linear-gradient(to bottom right,#e8a87c, #fff);
+    margin: 0;
+    padding: 0;
 }
 
 #header {
     grid-area: header;
-    background: lightyellow;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 40px;
     justify-content: center;
     align-items: center;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #content {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 600px);
+    grid-template-rows: repeat(5, 450px);
     grid-template-areas:
     "at at at at at at at at"
     "app app ft ft ft ft reg reg"
