@@ -6,8 +6,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 40px 2250px 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 3000px 40px;
     grid-template-areas:
     "header"
     "content"
@@ -15,8 +15,6 @@
     justify-content: center;
     align-content: center;
     background-image: linear-gradient(to bottom right,#e8a87c, #fff);
-    margin: 0;
-    padding: 0;
 }
 
 #header {
@@ -25,6 +23,25 @@
     top: 0;
     width: 100%;
     height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "logo nav";
+}
+
+.logo {
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    grid-area: nav;
     justify-content: center;
     align-items: center;
 }
@@ -36,15 +53,42 @@
     justify-content: space-evenly;
 }
 
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#Download {
+    background: #d1122b;
+    width: 100px;
+    height: 20px;
+    border-radius: 8%;
+}
+
+/* Styling the links */
+a:link, a:visited {
+text-decoration: none;
+color: #f1ffff;
+}
+
+a:hover {
+    color: rgb(167, 223, 168);
+}
+
+a:active {
+    text-decoration: none;
+}
+
 #content {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 450px);
+    grid-template-rows: repeat(6, 500px);
     grid-template-areas:
     "at at at at at at at at"
-    "app app ft ft ft ft reg reg"
-    "app app ss ss ss ss reg reg"
+    "app app app app app app app app"
+    "ft ft ft ft ft ft ft ft"
+    "reg reg reg reg reg reg reg reg"
     "pr pr pr pr pr pr pr pr"
     "tt tt tt tt tt tt tt tt";
     justify-content: center;
@@ -55,30 +99,26 @@
     grid-area: footer;
 }
 
-#about {
+#content-about {
     grid-area: at;
 }
 
-#app {
+#content-app {
     grid-area: app;
 }
 
-#features {
+#content-features {
     grid-area: ft;
 }
 
-#registration {
+#content-download {
     grid-area: reg;
 }
 
-#screenshots {
-    grid-area: ss;
-}
-
-#pricing {
+#content-pricing {
     grid-area: pr;
 }
 
-#testimonials {
+#content-testimonials {
     grid-area: tt;
 }

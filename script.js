@@ -1,21 +1,23 @@
 
 function createNav() {
 
-    const navItems = ['About', 'Features', 'Pricing', 'Testimonials', 'Download Now'];
+    const navItems = ['About', 'Features', 'Pricing', 'Testimonials', 'Download'];
 
     const ul = document.createElement('ul')
 
-    ul.className="navbar";
+    ul.className = "navbar";
 
-    const header = document.getElementById('header');
+    const navigation = document.getElementById('navigation');
 
     for (let navItem of navItems) {
         let li = document.createElement("li");
         ul.appendChild(li);
-        li.innerHTML += navItem;
+        li.innerHTML += `<a href="#content-${navItem.toLowerCase()}">${navItem}</a>`;
+        li.id = navItem;
+        li.className = "navbar-item box";
     }
 
-    header.appendChild(ul);
+    navigation.appendChild(ul);
 
 }
 
