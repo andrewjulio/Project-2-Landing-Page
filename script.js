@@ -43,3 +43,29 @@ function createSec() {
 }
 
 createSec();
+
+function createTest() {
+
+    const testimonials = [
+        {
+            quote: "Best ever app to do whatever you want to do!"
+            source: "Head of NewIndustryBuzzword - Fony"
+        },
+        {
+            quote: "Couldn't imagine how our business would function these days if we never had invested in BestApp!"
+            source: "Growth Marketing Head - Samesong Electronics"
+        },
+        {
+            quote: "5 Stars all the way! They should create a Michelin Star system just for this app!"
+            source: "Tony Handsome - Virgin Pacific"
+        }
+
+    ];
+
+    function getRandomTest() {
+        for (let testimonial of testimonials) {
+            return(testimonials[testimonial]);
+        }
+
+    }
+}
