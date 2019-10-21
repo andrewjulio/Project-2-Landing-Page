@@ -45,27 +45,51 @@ function createSec() {
 createSec();
 
 function createTest() {
+    const quoteBox = document.createElement('div');
+    const testSection = document.getElementById('content-testimonials');
+    quoteBox.id = "quoteBox";
+    testSection.appendChild(quoteBox);
 
     const testimonials = [
         {
-            quote: "Best ever app to do whatever you want to do!"
+            quote: "Best ever app to do whatever you want to do!",
             source: "Head of NewIndustryBuzzword - Fony"
         },
         {
-            quote: "Couldn't imagine how our business would function these days if we never had invested in BestApp!"
+            quote: "Couldn't imagine how our business would function these days if we never had invested in BestApp!",
             source: "Growth Marketing Head - Samesong Electronics"
         },
         {
-            quote: "5 Stars all the way! They should create a Michelin Star system just for this app!"
+            quote: "5 Stars all the way! They should create a Michelin Star system just for this app!",
             source: "Tony Handsome - Virgin Pacific"
         }
-
     ];
 
     function getRandomTest() {
-        for (let testimonial of testimonials) {
-            return(testimonials[testimonial]);
-        }
-
+        let randomNumber = Math.floor(Math.random()*testimonials.length);
+        return(testimonials[randomNumber]);
     }
+
+    function printTest() {
+        let test = getRandomTest();
+        let htmlString = "";
+
+        htmlString += `<p class='quote'>${test.quote}</p><br>`;
+        htmlString += `<p class='source'>${test.source}`;
+        htmlString += "</p>";
+
+        document.getElementById("quoteBox").innerHTML = htmlString;
+    }
+
+    printTest();
+
+    let timer;
+
+    function myTimer() {
+        timer = setInterval(printTest, 3500);
+    }
+
+    myTimer();
 }
+
+createTest();
