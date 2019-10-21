@@ -67,27 +67,27 @@ function createFeat() {
     const featureCards = [
         {
             feature: "save",
-            description: "Description1"
+            description: "Save money on your accommodation that you can spend on Margaritas instead!"
         },
         {
             feature: "Feature2",
-            description: "Description2"
+            description: "Stay in the best rated places, whether they be hotels, rooms or apartments!"
         },
         {
             feature: "Feature3",
-            description: "Description3"
+            description: "Compare across all Global major sites, such as, Boo-king.com & AirRnR!"
         },
         {
             feature: "Feature4",
-            description: "Description4"
+            description: "Our customer service is online 24/7/365 and there to help you whenever they can!"
         },
         {
             feature: "Feature5",
-            description: "Description5"
+            description: "Make the right choice by reducing Carbon footprint by choosing our Green Filters!"
         },
         {
             feature: "Feature6",
-            description: "Description6"
+            description: "We feature only the best hosts with exceptional ratings and friendliness!"
         }
     ];
 
@@ -96,7 +96,7 @@ function createFeat() {
     for (let featureCard of featureCards) {
         feature = document.createElement("div");
         feature.className = "card box";
-        feature.innerHTML = `<img src="${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.feature}</p><p>${featureCard.description}</p>`
+        feature.innerHTML = `<img src="${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.description}</p>`
         features.appendChild(feature);
     }
 }

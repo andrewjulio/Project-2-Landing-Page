@@ -151,6 +151,16 @@ a:active {
     align-items: center;
 }
 
+.card {
+    width: 200px;
+    height: 360px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
 #content-pricing {
     grid-area: pr;
 }
