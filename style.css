@@ -14,7 +14,7 @@
     "footer";
     justify-content: center;
     align-content: center;
-    background-image: linear-gradient(to bottom right,#e8a87c, #fff);
+    background-image: linear-gradient(to bottom right,#e8a87c, rgb(83, 165, 165));
 }
 
 #header {
@@ -41,6 +41,9 @@
     margin: 0;
     padding: 0;
     padding-left: 5%;
+    font-family: Lobster;
+    color: white;
+    font-size: 2.4em;
 }
 
 .navbar {
@@ -50,6 +53,9 @@
     align-items: center;
     justify-content: space-evenly;
     padding-right: 5%;
+    font-family: Lobster;
+    color: rgb(90, 209, 209);
+    font-size: 1.4em;
 }
 
 ul {
@@ -70,14 +76,25 @@ p {
 }
 
 button {
-    background: #d1122b;
-    width: 100px;
+    background: rgb(83, 165, 165);
+    width: 120px;
     height: 40px;
     color: white;
     border-radius: 12px;
     margin: 0;
     padding: 0;
+    font-family: Lobster;
+    font-size: 1em;
 }
+
+button:hover {
+    color: rgb(150, 226, 154);
+    background: white;
+    width: 125px;
+    height: 42px;
+    font-size: 1.05em;
+}
+
 
 /* Styling the links */
 a:link, a:visited {
@@ -86,7 +103,7 @@ color: #f1ffff;
 }
 
 a:hover {
-    color: rgb(167, 223, 168);
+    color: rgb(178, 247, 181);
 }
 
 a:active {

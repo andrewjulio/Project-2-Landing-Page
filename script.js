@@ -8,13 +8,13 @@ function createNav() {
     for (let navItem of navItems) {
         let li = document.createElement("li");
         if (navItem == 'Download') {
-            li.innerHTML += `<a href="#content-${navItem.toLowerCase()}"><button>${navItem}</button></a>`;
+            li.innerHTML += `<a href="#content-${navItem.toLowerCase()}"><button><p>${navItem}</p></button></a>`;
             li.id = navItem;
             li.className = "navbar-item box";
             ul.appendChild(li);
         }
         else {
-            li.innerHTML += `<a href="#content-${navItem.toLowerCase()}">${navItem}</a>`;
+            li.innerHTML += `<a href="#content-${navItem.toLowerCase()}"><p>${navItem}</p></a>`;
             li.id = navItem;
             li.className = "navbar-item box";
             ul.appendChild(li);
