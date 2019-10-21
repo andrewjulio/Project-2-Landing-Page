@@ -54,11 +54,16 @@ function createAbout() {
     const aboutText = document.createElement('div');
     const about = document.getElementById('content-about');
     aboutText.id = "aboutText";
-    aboutText.innerHTML = "<p>CompareStays is the ultimate app for your weekend getaways and holiday trips.</br>Pay less for more!</p>"
+    aboutText.innerHTML = "<p>CompareStays is the ultimate app for your weekend getaways, business and holiday trips.</br></br>Pay less for more by comparing holiday providers as well as host reviews across sites!</p>"
     about.appendChild(aboutText);
 }
 
 createAbout();
+
+
+function createFeat() {
+    const feat = document.createElement
+}
 
 function createTest() {
     const quoteBox = document.createElement('div');
@@ -68,16 +73,16 @@ function createTest() {
 
     const testimonials = [
         {
-            quote: "Best ever app to do whatever you want to do!",
+            quote: "Best holiday bookings app ever! Found the best bargain for an apartment rated 5 Stars and was more expensive on Boo-king.com than on AirRnR!",
             source: "Head of NewIndustryBuzzword - Fony"
         },
         {
-            quote: "Couldn't imagine how our business would function these days if we never had invested in BestApp!",
-            source: "Growth Marketing Head - Samesong Electronics"
+            quote: "These days I couldn't imagine how our business would function, if we never had invested in CompareStays! Not only did we increase passngers on flights but fully book our hotels.",
+            source: "Richard Handsome - Virgin Pacific"
         },
         {
             quote: "5 Stars all the way! They should create a Michelin Star system just for this app!",
-            source: "Tony Handsome - Virgin Pacific"
+            source: "Another happy customer - Somewhere over the Rainbow"
         }
     ];
 
@@ -102,7 +107,7 @@ function createTest() {
     let timer;
 
     function myTimer() {
-        timer = setInterval(printTest, 3500);
+        timer = setInterval(printTest, 4500);
     }
 
     myTimer();

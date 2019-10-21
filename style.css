@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 1750px 50px;
+    grid-template-rows: 50px 2050px 50px;
     grid-template-areas:
     "header"
     "content"
@@ -90,9 +90,6 @@ button {
 button:hover {
     color: rgb(150, 226, 154);
     background: white;
-    width: 125px;
-    height: 42px;
-    font-size: 1.05em;
 }
 
 
@@ -114,11 +111,11 @@ a:active {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 250px) repeat(2, 500px) 250px;
+    grid-template-rows: repeat(2, 400px) repeat(2, 500px) 250px;
     grid-template-areas:
-    "app app at at at at at at"
-    "app app ft ft ft ft ft ft"
-    "reg reg reg reg reg reg reg reg"
+    "app app app at at at at at"
+    "app app app at at at at at"
+    "ft ft ft ft ft ft ft ft"
     "pr pr pr pr pr pr pr pr"
     "tt tt tt tt tt tt tt tt";
     justify-content: center;
@@ -149,10 +146,6 @@ a:active {
     grid-area: ft;
 }
 
-#content-download {
-    grid-area: reg;
-}
-
 #content-pricing {
     grid-area: pr;
 }
@@ -165,7 +158,7 @@ a:active {
 }
 
 #quoteBox {
-    width: 300px;
+    width: 500px;
     height: 300px;
     color: white;
     border-radius: 12px;
