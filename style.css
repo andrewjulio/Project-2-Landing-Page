@@ -1,13 +1,13 @@
 /* Styling for the Landing Page on Large Devices*/
 .box {
-    border: 1px solid lightseagreen;
+    /*border: 1px solid lightseagreen;
     /*background: lightsteelblue;*/
 }
 
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 2050px 50px;
+    grid-template-rows: 50px 2650px 50px;
     grid-template-areas:
     "header"
     "content"
@@ -112,7 +112,7 @@ a:active {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 400px) repeat(2, 500px) 250px;
+    grid-template-rows: repeat(2, 400px) repeat(2, 800px) 250px;
     grid-template-areas:
     "app app app at at at at at"
     "app app app at at at at at"
@@ -151,8 +151,8 @@ a:active {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 10px 0px 10px 0px;
-    border-color: rgb(83, 165, 165);
+    border-top: solid 50px;
+    border-color: rgb(83, 165, 165, 0.3);
 }
 
 .card {
@@ -177,6 +177,8 @@ a:active {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    border-top: solid 50px;
+    border-color: rgb(83, 165, 165, 0.3);
 }
 
 .pricingCard {
