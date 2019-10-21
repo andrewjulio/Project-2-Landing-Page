@@ -74,7 +74,7 @@ function createTest() {
         let test = getRandomTest();
         let htmlString = "";
 
-        htmlString += `<p class='quote'>${test.quote}</p><br>`;
+        htmlString += `<p class='quote'>"${test.quote}"</p><br>`;
         htmlString += `<p class='source'>${test.source}`;
         htmlString += "</p>";
 
