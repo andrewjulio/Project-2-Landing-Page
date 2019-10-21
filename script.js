@@ -13,6 +13,12 @@ function createNav() {
             li.className = "navbar-item box";
             ul.appendChild(li);
         }
+        else if (navItem == 'About') {
+            li.innerHTML += `<a href="#top"><p>${navItem}</p></a>`;
+            li.id = navItem;
+            li.className = "navbar-item box";
+            ul.appendChild(li);
+        }
         else {
             li.innerHTML += `<a href="#content-${navItem.toLowerCase()}"><p>${navItem}</p></a>`;
             li.id = navItem;
@@ -29,7 +35,7 @@ createNav();
 
 function createSec() {
 
-    const sectionNames = ['About', 'Features', 'Pricing', 'Download', 'Testimonials'];
+    const sectionNames = ['About', 'App', 'Features', 'Pricing', 'Download', 'Testimonials'];
 
     const content = document.getElementById('content');
 
@@ -43,6 +49,16 @@ function createSec() {
 }
 
 createSec();
+
+function createAbout() {
+    const aboutText = document.createElement('div');
+    const about = document.getElementById('content-about');
+    aboutText.id = "aboutText";
+    aboutText.innerHTML = "<p>CompareStays is the ultimate app for your weekend getaways and holiday trips.</br>Pay less for more!</p>"
+    about.appendChild(aboutText);
+}
+
+createAbout();
 
 function createTest() {
     const quoteBox = document.createElement('div');

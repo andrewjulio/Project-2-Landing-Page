@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 3000px 50px;
+    grid-template-rows: 50px 1750px 50px;
     grid-template-areas:
     "header"
     "content"
@@ -114,11 +114,10 @@ a:active {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 500px);
+    grid-template-rows: repeat(2, 250px) repeat(2, 500px) 250px;
     grid-template-areas:
-    "at at at at at at at at"
-    "app app app app app app app app"
-    "ft ft ft ft ft ft ft ft"
+    "app app at at at at at at"
+    "app app ft ft ft ft ft ft"
     "reg reg reg reg reg reg reg reg"
     "pr pr pr pr pr pr pr pr"
     "tt tt tt tt tt tt tt tt";
@@ -132,10 +131,18 @@ a:active {
 
 #content-about {
     grid-area: at;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    font-family: Lobster;
 }
 
 #content-app {
     grid-area: app;
+    background-image: url("phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #content-features {
