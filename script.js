@@ -66,7 +66,7 @@ function createFeat() {
 
     const featureCards = [
         {
-            feature: "Feature1",
+            feature: "save",
             description: "Description1"
         },
         {
@@ -96,7 +96,7 @@ function createFeat() {
     for (let featureCard of featureCards) {
         feature = document.createElement("div");
         feature.className = "card box";
-        feature.innerHTML = `<img src="${featureCard}.jpg" alt="picture of ${featureCard.feature}"><p>${featureCard.feature}</p><p>${featureCard.description}</p>`
+        feature.innerHTML = `<img src="${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.feature}</p><p>${featureCard.description}</p>`
         features.appendChild(feature);
     }
 }
