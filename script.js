@@ -1,4 +1,4 @@
-
+/* Creating the Navigation bar */
 function createNav() {
 
     const navItems = ['About', 'Features', 'Pricing', 'Testimonials', 'Download'];
@@ -32,7 +32,7 @@ function createNav() {
 
 createNav();
 
-
+/* Creating the Content Sections */
 function createSec() {
 
     const sectionNames = ['About', 'App', 'Features', 'Pricing', 'Download', 'Testimonials'];
@@ -50,6 +50,7 @@ function createSec() {
 
 createSec();
 
+/* Creating the About Section */
 function createAbout() {
     const aboutText = document.createElement('div');
     const about = document.getElementById('content-about');
@@ -60,11 +61,49 @@ function createAbout() {
 
 createAbout();
 
-
+/* Creating the Features Section */
 function createFeat() {
-    const feat = document.createElement
+
+    const featureCards = [
+        {
+            feature: "Feature1",
+            description: "Description1"
+        },
+        {
+            feature: "Feature2",
+            description: "Description2"
+        },
+        {
+            feature: "Feature3",
+            description: "Description3"
+        },
+        {
+            feature: "Feature4",
+            description: "Description4"
+        },
+        {
+            feature: "Feature5",
+            description: "Description5"
+        },
+        {
+            feature: "Feature6",
+            description: "Description6"
+        }
+    ];
+
+    const features = document.getElementById('content-features');
+
+    for (let featureCard of featureCards) {
+        feature = document.createElement("div");
+        feature.className = "card box";
+        feature.innerHTML = `<img src="${featureCard}.jpg" alt="picture of ${featureCard.feature}"><p>${featureCard.feature}</p><p>${featureCard.description}</p>`
+        features.appendChild(feature);
+    }
 }
 
+createFeat();
+
+/* Creating the Testimony Section */
 function createTest() {
     const quoteBox = document.createElement('div');
     const testSection = document.getElementById('content-testimonials');
