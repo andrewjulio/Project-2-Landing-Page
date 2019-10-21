@@ -113,12 +113,12 @@ function createPricing() {
     const pricingCards = [
         {
             pricing: "Free",
-            description: "The free version of CompareStays offers excellent accommodation options.",
+            description: "Free CompareStays offers excellent options.",
             price: "FREE"
         },
         {
             pricing: "Deluxe",
-            description: "Exclusive offers those that enjoy the finer things in life.",
+            description: "Exclusive offers for those that enjoy the finer things in life.",
             price: "$20pcm"
         },
         {
