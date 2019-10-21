@@ -125,6 +125,8 @@ a:active {
 
 #footer {
     grid-area: footer;
+    justify-content: center;
+    text-align: center;
 }
 
 #content-about {
@@ -149,6 +151,8 @@ a:active {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    border: 10px 0px 10px 0px;
+    border-color: rgb(83, 165, 165);
 }
 
 .card {
@@ -159,10 +163,36 @@ a:active {
     align-items: center;
     align-content: center;
     text-align: center;
+    font-family: Yanone Kaffeesatz;
+    font-size: 1.2em;
+}
+
+.card p {
+    padding-top: 5px;
 }
 
 #content-pricing {
     grid-area: pr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pricingCard {
+    width: 200px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: Yanone Kaffeesatz;
+    font-size: 1.2em;
+}
+
+.pricingCard p {
+    padding: 5px 0 8px 0;
 }
 
 #content-testimonials {
@@ -188,5 +218,6 @@ a:active {
 
 .source {
     text-align: center;
+    font-family: Yanone Kaffeesatz;
     font-size: 1.2em;
 }

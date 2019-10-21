@@ -32,6 +32,7 @@ function createNav() {
 
 createNav();
 
+
 /* Creating the Content Sections */
 function createSec() {
 
@@ -50,6 +51,7 @@ function createSec() {
 
 createSec();
 
+
 /* Creating the About Section */
 function createAbout() {
     const aboutText = document.createElement('div');
@@ -60,6 +62,7 @@ function createAbout() {
 }
 
 createAbout();
+
 
 /* Creating the Features Section */
 function createFeat() {
@@ -102,6 +105,41 @@ function createFeat() {
 }
 
 createFeat();
+
+
+/* Creating the Pricing Section */
+function createPricing() {
+
+    const pricingCards = [
+        {
+            pricing: "Free",
+            description: "The free version of CompareStays offers excellent accommodation options.",
+            price: "FREE"
+        },
+        {
+            pricing: "Deluxe",
+            description: "Exclusive offers those that enjoy the finer things in life.",
+            price: "$20pcm"
+        },
+        {
+            pricing: "Luxor",
+            description: "Open to LAMEX Platinum and Black Card holders only!",
+            price: "$400pcy"
+        }
+    ];
+
+    const pricing = document.getElementById('content-pricing');
+
+    for (let pricingCard of pricingCards) {
+        price = document.createElement("div");
+        price.className = "pricingCard box";
+        price.innerHTML = `<img src="${pricingCard.pricing}.png" alt="${pricingCard.pricing} Membership"><p class="membership">${pricingCard.description}</p><p class="prices">${pricingCard.price}</p>`
+        pricing.appendChild(price);
+    }
+}
+
+createPricing();
+
 
 /* Creating the Testimony Section */
 function createTest() {
