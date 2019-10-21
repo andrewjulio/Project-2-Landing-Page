@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 3000px 40px;
+    grid-template-rows: 50px 3000px 50px;
     grid-template-areas:
     "header"
     "content"
@@ -19,10 +19,6 @@
 
 #header {
     grid-area: header;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 40px;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -30,6 +26,11 @@
     grid-template-rows: 100%;
     grid-template-areas:
     "logo nav";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 5px 0;
 }
 
 .logo {
@@ -38,31 +39,43 @@
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-.navigation {
-    grid-area: nav;
-    justify-content: center;
-    align-items: center;
+    padding-left: 5%;
 }
 
 .navbar {
+    grid-area: nav;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 5%;
 }
 
 ul {
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-#Download {
+li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
     background: #d1122b;
     width: 100px;
-    height: 20px;
-    border-radius: 8%;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Styling the links */
