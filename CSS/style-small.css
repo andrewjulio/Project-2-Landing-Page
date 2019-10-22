@@ -9,7 +9,7 @@
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 1550px 50px;
+        grid-template-rows: 100px 1750px 50px;
         grid-template-areas:
         "header"
         "content"
@@ -115,7 +115,7 @@
         grid-area: content;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(2, 250px) repeat(2, 400px) 250px;
+        grid-template-rows: repeat(2, 250px) repeat(2, 500px) 250px;
         grid-template-areas:
         "app app app app app app app app"
         "at at at at at at at at"
