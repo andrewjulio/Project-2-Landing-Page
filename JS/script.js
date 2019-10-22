@@ -69,27 +69,27 @@ function createFeat() {
 
     const featureCards = [
         {
-            feature: "save",
+            feature: "feature1",
             description: "Save money on your accommodation that you can spend on Margaritas instead!"
         },
         {
-            feature: "Feature2",
+            feature: "feature2",
             description: "Stay in the best rated places, whether they be hotels, rooms or apartments!"
         },
         {
-            feature: "Feature3",
+            feature: "feature3",
             description: "Compare across all Global major sites, such as, Boo-king.com & AirRnR!"
         },
         {
-            feature: "Feature4",
+            feature: "feature4",
             description: "Our customer service is online 24/7/365 and there to help you whenever they can!"
         },
         {
-            feature: "Feature5",
+            feature: "feature5",
             description: "Make the right choice by reducing Carbon footprint by choosing our Green Filters!"
         },
         {
-            feature: "Feature6",
+            feature: "feature6",
             description: "We feature only the best hosts with exceptional ratings and friendliness!"
         }
     ];
@@ -99,7 +99,7 @@ function createFeat() {
     for (let featureCard of featureCards) {
         feature = document.createElement("div");
         feature.className = "card box";
-        feature.innerHTML = `<img src="${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.description}</p>`
+        feature.innerHTML = `<img src="images/${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.description}</p>`
         features.appendChild(feature);
     }
 }
@@ -114,7 +114,7 @@ function createPricing() {
         {
             pricing: "Free",
             description: "Free CompareStays offers excellent options.",
-            price: "FREE"
+            price: "$0"
         },
         {
             pricing: "Deluxe",
@@ -133,7 +133,7 @@ function createPricing() {
     for (let pricingCard of pricingCards) {
         price = document.createElement("div");
         price.className = "pricingCard box";
-        price.innerHTML = `<img src="${pricingCard.pricing}.png" alt="${pricingCard.pricing} Membership"><p class="membership">${pricingCard.description}</p><p class="prices">${pricingCard.price}</p>`
+        price.innerHTML = `<img src="images/${pricingCard.pricing}.png" alt="${pricingCard.pricing} Membership"><p class="pricingName">${pricingCard.pricing}</p><p class="membership">${pricingCard.description}</p><p class="prices">${pricingCard.price}</p>`
         pricing.appendChild(price);
     }
 }
