@@ -2,14 +2,14 @@
 
     /* Styling for the Landing Page on Large Devices*/
     .box {
-        /*border: 1px solid lightseagreen;
+        border: 1px solid lightseagreen;
         /*background: lightsteelblue;*/
     }
 
     .container {
         display: grid;
-        grid-template-columns: 80%;
-        grid-template-rows: 50px 2650px 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 1750px 50px;
         grid-template-areas:
         "header"
         "content"
@@ -58,7 +58,7 @@
         padding-right: 5%;
         font-family: Lobster;
         color: rgb(90, 209, 209);
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     ul {
@@ -114,10 +114,10 @@
         grid-area: content;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(2, 400px) repeat(2, 800px) 250px;
+        grid-template-rows: repeat(2, 250px) repeat(2, 500px) 250px;
         grid-template-areas:
-        "app app app at at at at at"
-        "app app app at at at at at"
+        "app app app app at at at at"
+        "app app app app at at at at"
         "ft ft ft ft ft ft ft ft"
         "pr pr pr pr pr pr pr pr"
         "tt tt tt tt tt tt tt tt";
@@ -136,13 +136,29 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        font-size: 3.5em;
+        font-size: 2em;
         font-family: Lobster;
+        padding-right: 10px;
+    }
+
+    .aboutText {
+        width: 300px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
     }
 
     #content-app {
         grid-area: app;
-        background-image: url("../images/phone.png");
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneCard {
+        width: 422px;
+        height: 500px;
+        background: url("../images/phone.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -180,15 +196,19 @@
     }
 
     .card {
-        width: 200px;
-        height: 360px;
+        width: 140px;
+        height: 220px;
         display: grid;
         justify-content: center;
         align-items: center;
-        align-content: center;
         text-align: center;
         font-family: Yanone Kaffeesatz;
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+
+    .card img {
+        width: 140px;
+        height: 140px;
     }
 
     .card p {

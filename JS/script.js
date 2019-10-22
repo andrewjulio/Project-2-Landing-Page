@@ -52,11 +52,24 @@ function createSec() {
 createSec();
 
 
+/* Creating the App Section */
+function createApp() {
+    const app = document.getElementById('content-app');
+    const imgCard = document.createElement('div');
+    app.appendChild(imgCard);
+    imgCard.className = "phoneCard box";
+    imgCard.id = "phoneCard";
+}
+
+createApp();
+
+
+
 /* Creating the About Section */
 function createAbout() {
     const aboutText = document.createElement('div');
     const about = document.getElementById('content-about');
-    aboutText.id = "aboutText";
+    aboutText.className = "aboutText box";
     aboutText.innerHTML = "<p>CompareStays is the ultimate app for your weekend getaways, business and holiday trips.</br></br>Pay less for more by comparing holiday providers as well as host reviews across sites!</p>"
     about.appendChild(aboutText);
 }

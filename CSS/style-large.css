@@ -2,7 +2,7 @@
 
     /* Styling for the Landing Page on Large Devices*/
     .box {
-        /*border: 1px solid lightseagreen;
+        border: 1px solid lightseagreen;
         /*background: lightsteelblue;*/
     }
 
@@ -116,8 +116,8 @@
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(2, 400px) repeat(2, 800px) 250px;
         grid-template-areas:
-        "app app app at at at at at"
-        "app app app at at at at at"
+        "app app app app at at at at"
+        "app app app app at at at at"
         "ft ft ft ft ft ft ft ft"
         "pr pr pr pr pr pr pr pr"
         "tt tt tt tt tt tt tt tt";
@@ -138,11 +138,27 @@
         align-items: center;
         font-size: 3.5em;
         font-family: Lobster;
+        padding-right: 10px;
+    }
+
+    .aboutText {
+        width: 600px;
+        height: 750px;
+        justify-content: center;
+        align-items: center;
     }
 
     #content-app {
         grid-area: app;
-        background-image: url("../images/phone.png");
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneCard {
+        width: 675px;
+        height: 800px;
+        background: url("../images/phone.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -180,8 +196,8 @@
     }
 
     .card {
-        width: 200px;
-        height: 360px;
+        width: 175px;
+        height: 250px;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -189,6 +205,11 @@
         text-align: center;
         font-family: Yanone Kaffeesatz;
         font-size: 1.2em;
+    }
+
+    .card img {
+        width: 175px;
+        height: 175px;
     }
 
     .card p {
@@ -247,4 +268,5 @@
         font-family: Yanone Kaffeesatz;
         font-size: 1.2em;
     }
+
 }

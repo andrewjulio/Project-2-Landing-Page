@@ -1,0 +1,256 @@
+@media (max-width: 900px) {
+
+    /* Styling for the Landing Page on Large Devices*/
+    .box {
+        border: 1px solid lightseagreen;
+        /*background: lightsteelblue;*/
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1550px 50px;
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+        justify-content: center;
+        align-content: center;
+        background-image: linear-gradient(to bottom right,#e8a87c, rgb(83, 165, 165));
+    }
+
+    #header {
+        grid-area: header;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "logo"
+        "nav";
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        margin: 5px 0 5px 0;
+        padding: 5px 0 5px 0;
+        background: rgb(0, 0, 0, 0.3);
+    }
+
+    .logo {
+        grid-area: logo;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+        font-family: Lobster;
+        color: white;
+        font-size: 2.4em;
+    }
+
+    .navbar {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 5%;
+        font-family: Lobster;
+        color: rgb(90, 209, 209);
+        font-size: 0.9em;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        background: rgb(83, 165, 165);
+        width: 90px;
+        height: 30px;
+        color: white;
+        border-radius: 12px;
+        margin: 0;
+        padding: 0;
+        font-family: Lobster;
+        font-size: 0.9em;
+    }
+
+    button:hover {
+        color: rgb(150, 226, 154);
+        background: white;
+    }
+
+
+    /* Styling the links */
+    a:link, a:visited {
+    text-decoration: none;
+    color: #f1ffff;
+    }
+
+    a:hover {
+        color: rgb(178, 247, 181);
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    #content {
+        grid-area: content;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 250px) repeat(2, 400px) 250px;
+        grid-template-areas:
+        "app app app app app app app app"
+        "at at at at at at at at"
+        "ft ft ft ft ft ft ft ft"
+        "pr pr pr pr pr pr pr pr"
+        "tt tt tt tt tt tt tt tt";
+        justify-content: center;
+        align-content: center;
+    }
+
+    #footer {
+        grid-area: footer;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #content-about {
+        grid-area: at;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-family: Lobster;
+        padding: 5px;
+    }
+
+    .aboutText {
+        width: 200px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content-app {
+        grid-area: app;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneCard {
+        width: 211px;
+        height: 250px;
+        background: url("../images/phone.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #content-features {
+        grid-area: ft;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .card {
+        width: 90px;
+        height: 140px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Yanone Kaffeesatz;
+        font-size: 0.9em;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card p {
+        padding-top: 5px;
+    }
+
+    #content-pricing {
+        grid-area: pr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .pricingCard {
+        width: 100px;
+        height: 300px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Yanone Kaffeesatz;
+        font-size: 0.95em;
+    }
+
+    .pricingCard img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pricingCard p {
+        padding: 2px 0 2px 0;
+    }
+
+    #content-testimonials {
+        grid-area: tt;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #quoteBox {
+        width: 300px;
+        height: 300px;
+        color: white;
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .quote {
+        font-size: 1.4em;
+        text-align: center;
+        font-family: Lobster;
+    }
+
+    .source {
+        text-align: center;
+        font-family: Yanone Kaffeesatz;
+        font-size: 1em;
+    }
+}
