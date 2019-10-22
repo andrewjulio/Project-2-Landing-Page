@@ -111,14 +111,18 @@ function createFeat() {
 
     const featHeading = document.createElement('p');
     featHeading.textContent = "Features";
-    featHeading.className = "title";
+    featHeading.className = "featTitle";
     features.appendChild(featHeading);
+
+    const featCards = document.createElement('div');
+    featCards.className = "featCards";
+    features.appendChild(featCards);
 
     for (let featureCard of featureCards) {
         feature = document.createElement("div");
         feature.className = "card box";
         feature.innerHTML = `<img src="images/${featureCard.feature}.png" alt="picture of ${featureCard.feature}"><p>${featureCard.description}</p>`
-        features.appendChild(feature);
+        featCards.appendChild(feature);
     }
 }
 
@@ -150,14 +154,18 @@ function createPricing() {
 
     const priceHeading = document.createElement('p');
     priceHeading.textContent = "Membership";
-    priceHeading.className = "title";
+    priceHeading.className = "priceTitle";
     pricing.appendChild(priceHeading);
+
+    const priceCards = document.createElement('div');
+    priceCards.className = "priceCards";
+    pricing.appendChild(priceCards);
 
     for (let pricingCard of pricingCards) {
         price = document.createElement("div");
         price.className = "pricingCard box";
         price.innerHTML = `<img src="images/${pricingCard.pricing}.png" alt="${pricingCard.pricing} Membership"><p class="pricingName">${pricingCard.pricing}</p><p class="membership">${pricingCard.description}</p><p class="prices">${pricingCard.price}</p>`
-        pricing.appendChild(price);
+        priceCards.appendChild(price);
     }
 }
 

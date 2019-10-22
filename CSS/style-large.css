@@ -187,12 +187,33 @@
 
     #content-features {
         grid-area: ft;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas:
+        "featTitle"
+        "featCards";
+        justify-content: center;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .featTitle {
+        grid-area: featTitle;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Lobster;
+        font-size: 3em;
+    }
+
+    .featCards {
+        grid-area: featCards;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        border-top: solid 50px;
-        border-color: rgb(83, 165, 165, 0.3);
     }
 
     .card {
@@ -218,12 +239,34 @@
 
     #content-pricing {
         grid-area: pr;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas:
+        "priceTitle"
+        "priceCards";
+        justify-content: center;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .priceTitle {
+        grid-area: priceTitle;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Lobster;
+        font-size: 3em;
+    }
+
+
+    .priceCards {
+        grid-area: priceCards;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        border-top: solid 50px;
-        border-color: rgb(83, 165, 165, 0.3);
     }
 
     .pricingCard {

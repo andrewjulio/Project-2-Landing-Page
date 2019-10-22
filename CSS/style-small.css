@@ -143,10 +143,11 @@
     }
 
     .aboutText {
-        width: 200px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
         justify-content: center;
         align-items: center;
+        text-align: justify;
     }
 
     #content-app {
@@ -166,12 +167,31 @@
 
     #content-features {
         grid-area: ft;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 95%;
+        grid-template-areas:
+        "featTitle"
+        "featCards";
+        justify-content: center;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .featTitle {
+        grid-area: featTitle;
+        text-align: center;
+        font-family: Lobster;
+        font-size: 1em;
+    }
+
+    .featCards {
+        grid-area: featCards;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        border-top: solid 50px;
-        border-color: rgb(83, 165, 165, 0.3);
     }
 
     .card {
@@ -182,7 +202,7 @@
         align-items: center;
         text-align: center;
         font-family: Yanone Kaffeesatz;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .card img {
@@ -199,12 +219,34 @@
 
     #content-pricing {
         grid-area: pr;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 95%;
+        grid-template-areas:
+        "priceTitle"
+        "priceCards";
+        justify-content: center;
+        align-items: center;
+        border-top: solid 50px;
+        border-color: rgb(83, 165, 165, 0.3);
+    }
+
+    .priceTitle {
+        grid-area: priceTitle;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Lobster;
+        font-size: 1em;
+    }
+
+
+    .priceCards {
+        grid-area: priceCards;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        border-top: solid 50px;
-        border-color: rgb(83, 165, 165, 0.3);
     }
 
     .pricingCard {
