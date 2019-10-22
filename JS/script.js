@@ -109,6 +109,11 @@ function createFeat() {
 
     const features = document.getElementById('content-features');
 
+    const featHeading = document.createElement('p');
+    featHeading.textContent = "Features";
+    featHeading.className = "title";
+    features.appendChild(featHeading);
+
     for (let featureCard of featureCards) {
         feature = document.createElement("div");
         feature.className = "card box";
@@ -142,6 +147,11 @@ function createPricing() {
     ];
 
     const pricing = document.getElementById('content-pricing');
+
+    const priceHeading = document.createElement('p');
+    priceHeading.textContent = "Membership";
+    priceHeading.className = "title";
+    pricing.appendChild(priceHeading);
 
     for (let pricingCard of pricingCards) {
         price = document.createElement("div");
