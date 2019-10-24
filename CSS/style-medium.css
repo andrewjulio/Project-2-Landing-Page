@@ -6,6 +6,10 @@
         /*background: lightsteelblue;*/
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 100%;
