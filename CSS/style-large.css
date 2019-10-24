@@ -112,6 +112,7 @@
 
     a:active {
         text-decoration: none;
+        color: rgb(141, 211, 144);
     }
 
     #content {

@@ -8,7 +8,7 @@ function createNav() {
     for (let navItem of navItems) {
         let li = document.createElement("li");
         if (navItem == 'Download') {
-            li.innerHTML += `<a href="#content-${navItem.toLowerCase()}"><button><p>${navItem}</p></button></a>`;
+            li.innerHTML += `<a href="Download.zip"><button><p>${navItem}</p></button></a>`;
             li.id = navItem;
             li.className = "navbar-item box";
             ul.appendChild(li);
@@ -16,7 +16,7 @@ function createNav() {
         else if (navItem == 'About') {
             li.innerHTML += `<a href="#top"><p>${navItem}</p></a>`;
             li.id = navItem;
-            li.className = "navbar-item box";
+            li.className = "active box";
             ul.appendChild(li);
         }
         else {
@@ -36,7 +36,7 @@ createNav();
 /* Creating the Content Sections */
 function createSec() {
 
-    const sectionNames = ['About', 'App', 'Features', 'Pricing', 'Download', 'Testimonials'];
+    const sectionNames = ['About', 'App', 'Features', 'Pricing', 'Testimonials'];
 
     const content = document.getElementById('content');
 
@@ -222,3 +222,26 @@ function createTest() {
 }
 
 createTest();
+
+/* Determining if element is in viewport */
+function checkView () {
+    let isInViewport = function (elem) {
+        let bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const features = document.querySelector('content-features');
+    window.addEventListener('scroll', function (event) {
+        if (isInViewport(features)) {
+            let featView = document.querySelector('Features');
+            featView.classList.add("active");
+        }
+    }, false);
+}
+
+checkView();
