@@ -2,8 +2,12 @@
 
     /* Styling for the Landing Page on Large Devices*/
     .box {
-        border: 1px solid lightseagreen;
+        /*border: 1px solid lightseagreen;
         /*background: lightsteelblue;*/
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 
     .container {
